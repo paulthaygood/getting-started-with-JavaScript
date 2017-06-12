@@ -1,27 +1,27 @@
-// Answer the following questions in this file using comments without running the code
-
-// 1.
-// What does `givenName` equal right now?
+// // Answer the following questions in this file using comments without running the code
+//
+// // 1.
+// // What does `givenName` equal right now?
 var givenName;
 // A:undefined
-
-
-// 2.
-// What is `givenName` set to right now?
+//
+//
+// // 2.
+// // What is `givenName` set to right now?
 givenName = "Tim";
-// A:Tim
-
+// // A:Tim
+//
 
 // 3.
 // What is `givenName` set to right now?
 givenName = givenName;
-// A:givenName
+// A: "Tim"
 
 
 // 4.
 // What is `greeting` set to?
 var greeting = "Hello, how are you? " + givenName;
-// A: "Hello, how are you?"
+// A: "Hello, how are you? Tim"
 
 
 // 5.
@@ -35,7 +35,7 @@ var math = high - low;
 // 6.
 // What is `math` set to?
 math = high - "5";
-// A:50 5
+// A:45
 
 
 // 7.
@@ -44,15 +44,16 @@ math = high - "5";
 // The answer shoud not be written in a comment.
 var born = 1984;
 var today = 2017;
+var age = today - born;
 // A:
-alert("Tim is 33 years old")
+console.log("Tim is " + age + " years old")
 
 
 // 8.
 // Adjust this code. Store some information in the following variables.
 // A:
 var yourName = "Paul"
-var instructorName = "Gray"
+var instructorName = "Chris"
 
 
 // 9.
@@ -67,11 +68,11 @@ var statement = yourName + " is taking a class at The Iron Yard, my instructor's
 // 10.
 // We've created a variable named after each primitive type.
 // Use the `=` operator to assign a value to each variable matching the type in the name.
-var myNumber = 5
-var myString = "Hello"
-var myBoolean = true
+var myNumber = 5;
+var myString = "Hello";
+var myBoolean = true;
 // This one's a little tricky - think carefully about what makes a value "undefined"!
-var myUndefined = undefinded
+var myUndefined;
 // A:
 
 
@@ -79,17 +80,17 @@ var myUndefined = undefinded
 
 // 11.
 var x = (false == 0);
-// A.false
+// A.true
 
 
 // 12.
 var y = (false == "");
-// A.false
+// A.true
 
 
 // 13.
 var z = (0 == "");
-// A.false
+// A.true
 
 
 // 14.
@@ -104,7 +105,7 @@ var b = (undefined == undefined);
 
 // 16.
 var c = (undefined == null);
-// A.false
+// A.true
 
 
 // 17.
@@ -119,7 +120,7 @@ var e = (NaN == null);
 
 // 19.
 var f = (NaN == NaN);
-// A.true
+// A.false
 
 
 // 20.
@@ -127,9 +128,8 @@ var f = (NaN == NaN);
 // Use the variable `thirsty` as part of your conditional expression.
 // A:
 var thirsty = true;
-{
-  if (thirsty){
 
+if (thirsty) {
   console.log("I'm parched!");
 } else {
   console.log("I've had enough to drink.");
@@ -146,7 +146,7 @@ if(x){
 } else {
 	console.log("False!");
 }
-// A:True!
+// A:False!
 
 
 // 22.
@@ -176,7 +176,7 @@ if(false){
 } else {
 	console.log("False!");
 }
-// A:True!
+// A:False!
 
 
 // 25.
